@@ -1,0 +1,114 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---- ESTILO PARA O CORPO DA PÁGINA ---- */
+
+body {
+    /* define o modelo de layout flexivel para o corpo */
+    display: flex;
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    /* Definir a altura do corpo como 100% da altura da janela de visualização */
+    height: 100vh;
+    /* Define uma gradiente de fundo */
+    background: linear-gradient(to bottom, #ff99cc, #6699ff);
+    /* define a fonte do texto como arial ou, se não estiver dispo */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ---- ESTILO PARA CONTAINER PRINCIPAL----- */
+
+.container {
+    /* define o fundo  do conatiner como branco */
+    background: white;
+    /* adiciona um preenchimento de 20px ao redor do conteúdo do container*/
+    padding: 20px;
+    /* define bordas arredondadas com raio de 10px */
+    border-radius: 10px;
+    /* adiciona uma sombra com deslocamento vertical */
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    /* centraliza o texto dentro do conteiner  */
+    text-align: center;
+    /* define largura do container como 280px */
+    width: 280px;
+}
+
+
+/* ------IMAGEM---- */
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* ---- FORMULÁRIOS----- */
+
+form {
+    margin-top: 20px;
+}
+
+
+/* ----CAMPOS DE ENTRADA DE EMAIL E SENHA ---- */
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    /* define a largura dos campos como 100% do container pai,menos 20px */
+    width: calc(100% -20px);
+    /* adiciona um preeenchimento de 10px dentro dos campos */
+    padding: 10px;
+    margin: 10px 0;
+    /* inclui padding e border na largura e altura total dos elementos  */
+    box-sizing: border-box;
+    /* define uma borda sólida de 1px com cor cinza claro */
+    border: 1px solid #ccc;
+    /* define bordas arredondadas com raio de 5px */
+    border-radius: 5px;
+}
+
+
+/* ----BOTÃO DE ENVIO---- */
+
+input[type="submit"] {
+    width: calc(100% -20px);
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4caf50;
+}
+
+
+/* ----LINK DE CADASTRO */
+
+.cadastro-link {
+    /* define o link como um bloco */
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    /* remove o sublinhado do link  */
+    text-decoration: none;
+}
+
+.cadastro-link-hover {
+    /* remove o sublinhado do link, quando o cursor está sobre ele */
+    text-decoration: underline;
+}
