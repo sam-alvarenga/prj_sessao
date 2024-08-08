@@ -46,15 +46,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Login</title>
 </head>
 <body>
-
+<div class="container">
+    <img src="./imgs/login.jpg" alt="Login Imagem">
+    <form action="" method="post">
+        Email: <input type="email" name="email" required><br><br> 
+        Senha: <input type="password" name="email" required><br><br> 
+        <input type="submit" value="Entrar">
+    </form>
+    <a href="cadastro.php" class="cadastro-link">Fazer Cadastro</a>
+</div>
 </body>
 </html>
