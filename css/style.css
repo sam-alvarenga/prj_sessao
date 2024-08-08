@@ -46,8 +46,11 @@ body {
 /* ------IMAGEM---- */
 
 img {
+    /* deifine a largura da imagem para 100% do container pai */
     width: 100%;
+    /* Mantém a proporção da imagem */
     height: auto;
+    /* Arredonda os cantos superiores da imagme */
     border-radius: 10px 10px 0 0;
 }
 
@@ -55,6 +58,7 @@ img {
 /* ---- FORMULÁRIOS----- */
 
 form {
+    /* Adiciona uma margem superior de 20px */
     margin-top: 20px;
 }
 
@@ -81,18 +85,29 @@ input[type="text"] {
 /* ----BOTÃO DE ENVIO---- */
 
 input[type="submit"] {
+    /* deifine a largura do botão como 100% do container, menos 20px*/
     width: calc(100% -20px);
+    /* Adicona um preenchimento de 10px dentro do botão */
     padding: 10px;
+    /* Define a cor de fundo do botão como verde */
     background-color: #4caf50;
+    /* define a cor do texto do botão compo branco */
     color: white;
+    /* Rempve a borda padrão */
     border: none;
+    /* define  bordas arrendodadas com raio de 5px*/
     border-radius: 5px;
+    /* define o cursor como ponteiro (mãozinha) ao passar sobre o botão */
     cursor: pointer;
+    /* inclui padding e border na largura e altura total do botão  */
     box-sizing: border-box;
+    /* Adicona uma margem superior de 10px */
     margin-top: 10px;
 }
 
+/* ---- BOTÃO DE ENVIO QUANDO ESTÁ EM FOCO */
 input[type="submit"]:hover {
+    /* Altera a cor de fundo do botão quando o cursor está sobre ele */
     background-color: #4caf50;
 }
 
@@ -102,7 +117,9 @@ input[type="submit"]:hover {
 .cadastro-link {
     /* define o link como um bloco */
     display: block;
+    /* Adiciona uma margem superior de 20px */
     margin-top: 20px;
+    /* define a cor de texto como cinza escuro */
     color: #333;
     /* remove o sublinhado do link  */
     text-decoration: none;
