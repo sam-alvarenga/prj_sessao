@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
     //SQL para inserir um novo usuário na tabela 'usuários'
-    $sql = "INSERT INTO tb_usuarios(nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+    $sql = "INSERT INTO usuarios(nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
     //Executa a consulta e verifica se a inserção foi bem sucedida
     if (mysqli_query($conn, $sql)) {
