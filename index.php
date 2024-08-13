@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $senha = $_POST['senha'];
 
     //COnsulta o banco de ddados para encontrar o usuario com o email fornecido
-    $sql = "SELECT * FROM tb_usuarios WHERE email='$email'";
+    $sql = "SELECT * FROM usuarios WHERE email='$email'";
     //Executa a consulta no banco de dados
     $result = mysqli_query($conn, $sql);
 
@@ -59,7 +59,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     <img src="./imgs/login.jpg" alt="Login Imagem">
     <form action="" method="post">
         Email: <input type="email" name="email" required><br><br> 
-        Senha: <input type="password" name="email" required><br><br> 
+        Senha: <input type="password" name="senha" required><br><br> 
         <input type="submit" value="Entrar">
     </form>
     <a href="cadastro.php" class="cadastro-link">Fazer Cadastro</a>
