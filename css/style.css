@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 
@@ -105,7 +104,9 @@ input[type="submit"] {
     margin-top: 10px;
 }
 
+
 /* ---- BOTÃO DE ENVIO QUANDO ESTÁ EM FOCO */
+
 input[type="submit"]:hover {
     /* Altera a cor de fundo do botão quando o cursor está sobre ele */
     background-color: #4caf50;
